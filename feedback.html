@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback – Maker’s Muse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="feedback">
+
+<header class="header">
+    <a href="index.html" class="btn back-btn">⬅ Home</a>
+    <a href="products.html" class="btn">Products</a>
+    <a href="contact.html" class="btn">Contact</a>
+</header>
+
+<div class="form-container">
+    <h2>Customer Feedback</h2>
+
+    <label>Your Name</label>
+    <input type="text" id="fbName">
+
+    <label>Your Feedback</label>
+    <textarea rows="4" id="fbText"></textarea>
+
+    <button class="btn" onclick="saveFeedback()">Submit Feedback</button>
+
+    <p id="fbMsg"></p>
+</div>
+
+<div class="form-container">
+    <h3>Saved Feedbacks (This Browser)</h3>
+    <ul id="feedbackList"></ul>
+
+    <!-- SINGLE FILE EXPORT -->
+    <button class="btn" onclick="exportAllFeedbacksToTXT()">
+        Export All Feedbacks (Notepad)
+    </button>
+</div>
+
+</body>
+</html>

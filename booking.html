@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking – Maker’s Muse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="booking">
+
+<header class="header">
+    <h1>Book Your Item</h1>
+    <a href="index.html" class="btn back-btn">⬅ Home</a>
+    <a href="products.html" class="btn">Products</a>
+    <a href="cart.html" class="btn">Cart</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="feedback.html" class="btn">Feedback</a>
+</header>
+
+<div class="form-container">
+    <h2 id="selectedItem">Item:</h2>
+
+    <label>Your Name</label>
+    <input type="text" id="custName">
+
+    <label>Delivery Address</label>
+    <input type="text">
+
+    <label>Delivery Days</label>
+    <input type="number" id="days" value="3">
+
+    <button class="btn" onclick="bookItem()">Confirm Booking</button>
+    <p id="msg"></p>
+</div>
+
+</body>
+</html>

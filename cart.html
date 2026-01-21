@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart – Maker’s Muse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="products" onload="loadCart()">
+
+<header class="header">
+    <a href="index.html" class="btn back-btn">⬅ Home</a>
+    <a href="products.html" class="btn">Products</a>
+    <a href="cart.html" class="btn">Cart</a>
+    <a href="contact.html" class="btn">Contact</a>
+    <a href="feedback.html" class="btn">Feedback</a>
+    <h1>Your Cart</h1>
+</header>
+
+<div class="form-container">
+    <ul id="cartItems"></ul>
+    <h3>Total: <span id="totalPrice">₹0</span></h3>
+    <button class="btn" onclick="clearCart()">Clear Cart</button>
+</div>
+
+</body>
+</html>
